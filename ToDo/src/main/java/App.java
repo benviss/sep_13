@@ -26,7 +26,7 @@ public class App {
         tasks = new ArrayList<Task>();
         request.session().attribute("tasks", tasks);
       }
-
+      
       String description = request.queryParams("description");
       Task newTask = new Task(description);
       tasks.add(newTask);

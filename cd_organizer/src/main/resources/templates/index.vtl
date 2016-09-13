@@ -1,0 +1,21 @@
+<h1>CD Organizer</h1>
+
+
+#foreach ($genreArray in $genreBand)
+  <p>$genre[0]</p>
+  <p>$genreArray</p>
+#end
+
+
+
+<p>Add a new CD:</p>
+
+<form action="/bands" method="post">
+  <label for="genre">Enter your genre</label>
+  <input id="genre" name="genre" type="text">
+
+  <label for="band">Enter your band</label>
+  <input id="band" name="band" type="text">
+
+  <button type="submit" class="btn btn-default">Add CD</button>
+</form>

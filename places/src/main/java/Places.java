@@ -1,10 +1,11 @@
-public class Task {
+public class Place {
   private String mDescription;
 
-  public Task(String _description) {
+  public Place(String _description) {
     mDescription = _description;
   }
+
   public String getDescription() {
     return mDescription;
-  }
+  }  
 }
